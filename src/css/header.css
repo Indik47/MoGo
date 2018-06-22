@@ -1,0 +1,238 @@
+.header {
+    background-image:url("../content/images/header_backgr.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    visibility: hidden;
+
+}
+.nav-collapsed {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    display: block;
+    font-size: 2em;
+    margin-right: 2em;
+}
+
+.nav-collapsed:hover{
+    color: #fff2a5;
+    transition: ease-out;
+    transition-duration: 0.3s;
+}
+
+.nav-link {
+    color: #ffffff;
+    border-bottom: 2px solid transparent;
+}
+
+.icons, .logo {
+    display: flex;
+    align-items: center;
+}
+
+.icons {
+    margin-left: auto;
+}
+
+.icons a {
+    margin-left: 20px;
+    font-size: 15px;
+    color: white;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover,
+.nav-link.active,
+.icons a:hover {
+    color: #fff2a5;
+    border-bottom: 2px solid #fff2a5;
+    transition: ease-out;
+    transition-duration: 0.3s;
+}
+
+.carousel.slide.container {
+    padding-top: 40px;
+}
+
+.carousel-item {
+    text-align: center;
+    font-size: 110px;
+    line-height: 0;
+}
+
+.carousel .sectionHeading {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 0.8em;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    position: relative;
+}
+
+.carousel .subHeading {
+    font-family: 'Kaushan Script', cursive;
+    display: block;
+    font-size: 0.3em;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.carousel .sectionHeading:after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    left: 50%;
+    bottom: 0;
+    width: 70px;
+    height: 3px;
+    transform: translateX(-50%);
+}
+
+.carousel-item .btn {
+    background: transparent;
+    border-radius: 0;
+    border: 1px solid white;
+    font-family: Montserrat;
+    width: 150px;
+    margin-top: 25px;
+}
+
+.carousel-item .btn:hover {
+    background: rgba(255,242,165,0.3);
+    border-radius: 0;
+    border: 1px solid #fff2a5;
+    font-family: Montserrat;
+    width: 150px;
+    margin-top: 25px;
+}
+
+.carousel-indicators {
+    width: 100%;
+    left: 0;
+    margin: 0;
+    position: static;
+    margin-top: 80px;
+}
+
+.carousel-indicators li,
+.carousel-indicators li.active {
+    float: left;
+    width: 25%;
+    height: auto;
+    margin: 0;
+    text-indent: initial;
+    border-radius: 0;
+    background: none;
+    text-align: left;
+    border: none;
+}
+
+.carousel-indicators li .inner {
+    border-top: 2px solid #eeebcc;
+    position: relative;
+    color: #edeedc;
+    text-transform: uppercase;
+    margin: 0 12px;
+    padding: 10px 0;
+}
+
+ .carousel-indicators li .inner:hover,
+ .carousel-indicators li.active .inner {
+     border-top: 2px solid #fffff5;
+     color: #fffff5;
+}
+
+ .carousel-indicators li .inner:hover:after,
+ .carousel-indicators li.active .inner:after{
+     content: '';
+     position: absolute;
+     width: 60px;
+     height: 2px;
+     top: -2px;
+     left: 0;
+     background-color: #f38181;
+ }
+
+
+.carousel-indicators .number {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.main__item_div {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    height: 3px;
+    width: 60px;
+    background-color: white;
+}
+
+.learn-more {
+    border-radius: 0px;
+    border: 2px solid white;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.bottom-nav {
+    border-top: 2px solid white;
+    width: 200px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.head-bot-items {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+}
+
+.head-bot-items__item {
+    margin-left: 3em;
+    border-top: 2px solid white;
+    width: 200px;
+}
+
+
+@media (min-width: 1024px) {
+    .nav {
+        visibility: visible;
+    }
+
+    .nav-collapsed {
+        display: none;
+    }
+
+    .carousel .sectionHeading {
+        font-size: 1em;
+    }
+
+    .carousel .subHeading {
+       font-size: 0.5em;
+
+    }
+
+
+}
