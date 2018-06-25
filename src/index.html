@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../src/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400" rel="stylesheet">
     <meta charset="UTF-8">
     <title>MoGO</title>
 </head>
@@ -231,7 +232,6 @@
                     <img class="for-all-devices__imgs_iphone" src="../src/content/images/iphone.png" alt="iphone">
             </div>
         </div>
-    </div>
 
     <!--SERVICE-->
     <div class="service container">
@@ -241,11 +241,11 @@
         </div>
         <p class="section-heading__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
-        <div class="row service-info justify-content-between">
-            <div class="col-md-6">
+        <div class="row service-info">
+            <div class="col-10 col-lg-6">
                 <img class="service-img" src="../src/content/images/service-img.png" alt="service-img">
             </div>
-            <div class="col-md-6 service-dropdowns">
+            <div class="col-lg-6 service-accordion">
                 <!--Accordion-->
                 <div class="accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
                     <div class="card">
@@ -322,7 +322,7 @@
     <!--QUOTE DIVIDER-->
     <div class="container-fluid quote-div">
         <div class="container">
-            <div id="carouselControls" class="carousel slide" data-ride="carousel">
+            <div id="carousel-quote01-Controls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="carousel-item__inner">
@@ -352,12 +352,12 @@
                          </div>
                 </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <a class="carousel-control-prev" href="#carousel-quote01-Controls" role="button" data-slide="prev">
+                    <i class="fas fa-angle-left prev"></i>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <a class="carousel-control-next" href="#carousel-quote01-Controls" role="button" data-slide="next">
+                    <i class="fas fa-angle-right next"></i>
                     <span class="sr-only">Next</span>
                 </a>
             </div>
@@ -433,76 +433,118 @@
         </div>
     </div>
 
-    <!--&lt;!&ndash;SOME OF OUR WORK&ndash;&gt;-->
-    <!--<div class="container-fluid our-work">-->
-        <!--<div class="section-heading">-->
-            <!--<span class="section-heading__subheading">What we do</span>-->
-            <!--<div class="section-heading__main">Story about us</div>-->
-        <!--</div>-->
-        <!--<p class="section-heading__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>-->
+    <!--SOME OF OUR WORK-->
+    <div class="container-fluid our-work">
+        <div class="section-heading">
+            <span class="section-heading__subheading">What we do</span>
+            <div class="section-heading__main">Story about us</div>
+        </div>
+        <p class="section-heading__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
 
-        <!--<div class="row flex-row flex-wrap">-->
-            <!--<div class="col-3">-->
-            <!--<div class="img-background">-->
-                <!--<div class="img-container">-->
-                    <!--<img src="../src/content/images/about-us01.png" alt="about-us-01">-->
-                    <!--<div class="overlay">-->
-                        <!--<i class="fas fa-users"></i>-->
-                        <!--<div>Super team</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--</div>-->
-                <!--<div class="col-3">-->
-                    <!--<div class="img-background img-fluid">-->
-                        <!--<div class="img-container">-->
-                            <!--<img src="../src/content/images/about-us02.png" alt="about-us-01">-->
-                            <!--<div class="overlay">-->
-                                <!--<i class="far fa-plus-square"></i>-->
-                                <!--<div>Creativity</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
+        <div class="row flex-row flex-wrap">
+            <div class="col-3">
+            <div class="img-background">
+                <div class="img-container">
+                    <img src="../src/content/images/about-us01.png" alt="about-us-01">
+                    <div class="overlay">
+                        <i class="fas fa-users"></i>
+                        <div>Super team</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+                <div class="col-3">
+                    <div class="img-background img-fluid">
+                        <div class="img-container">
+                            <img src="../src/content/images/about-us02.png" alt="about-us-01">
+                            <div class="overlay">
+                                <i class="far fa-plus-square"></i>
+                                <div>Creativity</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <!--<div class="col-3">-->
-                <!--<div class="img-background">-->
-                    <!--<div class="img-container">-->
-                        <!--<img src="../src/content/images/gallery/gal3.png" alt="about-us-01">-->
-                        <!--<div class="overlay">-->
-                            <!--<i class="fas fa-desktop"></i>-->
-                            <!--<div>Digital</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="col-3">-->
-                <!--<div class="img-background">-->
-                    <!--<div class="img-container">-->
-                        <!--<img class="img-fluid" src="../src/content/images/about-us03.png" alt="about-us-01">-->
-                        <!--<div class="overlay">-->
-                            <!--<i class="fas fa-desktop"></i>-->
-                            <!--<div>Digital</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="col-3">-->
-                <!--<div class="img-background">-->
-                    <!--<div class="img-container">-->
-                        <!--<img  src="../src/content/images/about-us03.png" alt="about-us-01">-->
-                        <!--<div class="overlay">-->
-                            <!--<i class="fas fa-desktop"></i>-->
-                            <!--<div>Digital</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
+            <div class="col-3">
+                <div class="img-background">
+                    <div class="img-container">
+                        <img src="../src/content/images/gallery/gal3.png" alt="about-us-01">
+                        <div class="overlay">
+                            <i class="fas fa-desktop"></i>
+                            <div>Digital</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="img-background">
+                    <div class="img-container">
+                        <img class="img-fluid" src="../src/content/images/about-us03.png" alt="about-us-01">
+                        <div class="overlay">
+                            <i class="fas fa-desktop"></i>
+                            <div>Digital</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="img-background">
+                    <div class="img-container">
+                        <img  src="../src/content/images/about-us03.png" alt="about-us-01">
+                        <div class="overlay">
+                            <i class="fas fa-desktop"></i>
+                            <div>Digital</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
 
-
+    <!--SECOND QUOTE DIVIDER-->
+    <div class="container-fluid quote-div">
+        <div class="container">
+            <div id="carousel-quote02-Controls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-item__inner">
+                            <img class="quote__icon" src="../src/content/images/quote-divider_icon.png" alt="quote-divider-icon">
+                            <div>
+                                <div class="quote__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="quote__author">Jon Doe</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item__inner">
+                            <img class="quote__icon" src="../src/content/images/quote-divider_icon.png" alt="quote-divider-icon">
+                            <div>
+                                <div class="quote__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="quote__author">Jon Doe</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item__inner">
+                            <img class="quote__icon" src="../src/content/images/quote-divider_icon.png" alt="quote-divider-icon">
+                            <div>
+                                <div class="quote__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="quote__author">Jon Doe</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-quote02-Controls" role="button" data-slide="prev">
+                    <i class="fas fa-angle-left prev"></i>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-quote02-Controls" role="button" data-slide="next">
+                    <i class="fas fa-angle-right next"></i>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
     </div>
 
         <script type="text/javascript" src="../src/js/bootstrap.min.js"></script>
