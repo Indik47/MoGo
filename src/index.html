@@ -17,7 +17,6 @@
     <div class="header">
         <div class="container">
                 <!--header navbar-->
-
                 <div class="row">
                     <div class="col-3 logo">
                         <a href="#" class="nav-collapsed"><i class="fas fa-bars"></i></a>
@@ -29,7 +28,6 @@
                         <a class="nav-link" href="#">Work</a>
                         <a class="nav-link" href="#">Blog</a>
                         <a class="nav-link" href="#">Contact</a>
-
                     </nav>
                     <div class="col-2 icons">
                         <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
@@ -109,10 +107,10 @@
         </div>
         <p class="section-heading__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
-        <div class="row text-center about-us__imgs">
+        <div class="row text-center img-container__items">
                 <div class="col-12 col-sm-4">
                     <div class="img-background">
-                        <div class="img-wrapper">
+                        <div class="img-container">
                             <img src="../src/content/images/about-us01.png" alt="about-us-01">
                             <div class="overlay">
                                 <i class="fas fa-users"></i>
@@ -121,9 +119,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-4 about-us__imgs__column">
+                <div class="col-12 col-sm-4 img-container__items__column">
                     <div class="img-background">
-                        <div class="img-wrapper">
+                        <div class="img-container">
                             <img src="../src/content/images/about-us02.png" alt="about-us-01">
                             <div class="overlay">
                                 <i class="far fa-plus-square"></i>
@@ -132,9 +130,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-4 about-us__imgs__column">
+                <div class="col-12 col-sm-4 img-container__items__column">
                     <div class="img-background">
-                        <div class="img-wrapper">
+                        <div class="img-container">
                             <img src="../src/content/images/about-us03.png" alt="about-us-01">
                             <div class="overlay">
                                 <i class="fas fa-desktop"></i>
@@ -146,7 +144,7 @@
         </div>
     </div>
 
-    <!--INFO DIVIDER-->
+    <!--COUNT DIVIDER-->
     <div class="count-div">
         <div class="container">
             <div class="row">
@@ -243,26 +241,78 @@
         </div>
         <p class="section-heading__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
-        <div class="container">
-            <div class="row justify-content-between service-info">
-                <div class="col-md-6">
-                    <img class="service-img" src="../src/content/images/service-img.png" alt="service-img">
-                </div>
-                <div class="col-md-6 service-dropdowns">
-                    <div class="service-dropdowns__items">
-                        <img class="service-dropdowns__items_icon" src="../src/content/images/service_photography.svg" alt="photography-icon">
-                        <span>Photography</span>
-                        <img src="../src/content/images/arrow---down.svg" alt="arrow" class="arrow ml-auto">
+        <div class="row service-info justify-content-between">
+            <div class="col-md-6">
+                <img class="service-img" src="../src/content/images/service-img.png" alt="service-img">
+            </div>
+            <div class="col-md-6 service-dropdowns">
+                <!--Accordion-->
+                <div class="accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+                    <div class="card">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a class="d-flex align-items-center"data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h5 class="mb-0 d-inline">
+                                    <img class="accordion__card-header-icon" src="../src/content/images/service_photography.svg" alt="photography-icon">
+                                    Photography
+                                </h5>
+                                <i class="fa fa-angle-down rotate-icon ml-auto"></i>
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordionEx">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                accusamus labore sustainable VHS.
+                            </div>
+                        </div>
                     </div>
-                    <div class="service-dropdowns__items">
-                        <img class="service-dropdowns__items_icon" src="../src/content/images/equalizer.svg" alt="equalizer-icon">
-                        <span>Creativity</span>
-                        <img src="../src/content/images/arrow---down.svg" alt="arrow" class="arrow ml-auto">
+                    <div class="card">
+                        <div class="card-header" role="tab" id="headingTwo">
+                            <a class="d-flex align-items-center"data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                                <h5 class="mb-0 d-inline">
+                                    <img class="accordion__card-header-icon" src="../src/content/images/equalizer.svg" alt="creativity-icon">
+                                    Creativity
+                                </h5>
+                                <i class="fa fa-angle-down rotate-icon ml-auto"></i>
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordionEx">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                accusamus labore sustainable VHS.
+                            </div>
+                        </div>
                     </div>
-                    <div class="service-dropdowns__items">
-                        <img class="service-dropdowns__items_icon" src="../src/content/images/bullseye.svg" alt="bullseye-icon">
-                        <span>Web Design</span>
-                        <img src="../src/content/images/arrow---down.svg" alt="arrow" class="arrow ml-auto">
+                    <div class="card">
+                        <div class="card-header" role="tab" id="headingThree">
+                            <a class="d-flex align-items-center"data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                                <h5 class="mb-0 d-inline">
+                                    <img class="accordion__card-header-icon" src="../src/content/images/bullseye.svg" alt="web-design-icon">
+                                    Web design
+                                </h5>
+                                <i class="fa fa-angle-down rotate-icon ml-auto"></i>
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordionEx">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                accusamus labore sustainable VHS.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -270,21 +320,45 @@
     </div>
 
     <!--QUOTE DIVIDER-->
-    <div class="contaiter-fluid quote-divider">
-        <div class="container d-flex justify-content-around">
-                <img src="../src/content/images/arrow-left.svg" alt="arrow-left">
-                <div  class="quote-block">
-                    <img class="quote-block__icon" src="../src/content/images/quote-divider_icon.png" alt="quote-divider-icon">
-                    <div>
-                        <p class="quote-divider__quote">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
-                        </p>
-                        <span class="quote-block__author">Jon Doe</span>
+    <div class="container-fluid quote-div">
+        <div class="container">
+            <div id="carouselControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-item__inner">
+                            <img class="quote__icon" src="../src/content/images/quote-divider_icon.png" alt="quote-divider-icon">
+                            <div>
+                                <div class="quote__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="quote__author">Jon Doe</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="quote__icon" src="../src/content/images/quote-divider_icon.png" alt="quote-divider-icon">
+                        <div>
+                            <div class="quote__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                            <div class="quote__author">Jon Doe</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="quote__icon" src="../src/content/images/quote-divider_icon.png" alt="quote-divider-icon">
+                        <div>
+                            <div class="quote__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                            <div class="quote__author">Jon Doe</div>
+                        </div>
                     </div>
                 </div>
-                <img src="../src/content/images/arrow-right.svg" alt="arrow-right">
+                <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
-     </div>
-
+    </div>
 
     <!--WHO WE ARE-->
     <div class="container who-we-are">
@@ -296,14 +370,14 @@
         <div class="row">
             <div class="col-12 col-md-4">
                 <div class="img-background">
-                    <div class="img-wrapper">
-                        <img class="about-us__img" src="../src/content/images/matthew.png" alt="matthew">
-                        <div class="overlay">
-                            <a href="#"><i class="fab fa-facebook-square"></i></a>
-                            <a href="#"><i class="fab fa-twitter-square"></i></a>
-                            <a href="#"><i class="fab fa-pinterest-square"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
+                    <div class="img-container">
+                        <img class="img-container__item" src="../src/content/images/matthew.png" alt="matthew">
+                            <div class="overlay">
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-square"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
                     </div>
                 </div>
                 <div class="info">
@@ -313,8 +387,8 @@
             </div>
             <div class="col-12 col-md-4">
                 <div class="img-background">
-                    <div class="img-wrapper">
-                        <img class="about-us__img" src="../src/content/images/christopher.png" alt="chris">
+                    <div class="img-container">
+                        <img class="img-container__item" src="../src/content/images/christopher.png" alt="chris">
                         <div class="overlay">
                             <a href="#"><i class="fab fa-facebook-square"></i></a>
                             <a href="#"><i class="fab fa-twitter-square"></i></a>
@@ -330,8 +404,8 @@
             </div>
             <div class="col-12 col-md-4">
                 <div class="img-background">
-                    <div class="img-wrapper">
-                        <img class="about-us__img" src="../src/content/images/michael.png" alt="michael">
+                    <div class="img-container">
+                        <img class="img-container__item" src="../src/content/images/michael.png" alt="michael">
                         <div class="overlay">
                             <a href="#"><i class="fab fa-facebook-square"></i></a>
                             <a href="#"><i class="fab fa-twitter-square"></i></a>
@@ -355,74 +429,74 @@
         </div>
     </div>
 
-    <!--SOME OF OUR WORK-->
-    <div class="container-fluid our-work">
-        <div class="section-heading">
-            <span class="section-heading__subheading">What we do</span>
-            <div class="section-heading__main">Story about us</div>
-        </div>
-        <p class="section-heading__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    <!--&lt;!&ndash;SOME OF OUR WORK&ndash;&gt;-->
+    <!--<div class="container-fluid our-work">-->
+        <!--<div class="section-heading">-->
+            <!--<span class="section-heading__subheading">What we do</span>-->
+            <!--<div class="section-heading__main">Story about us</div>-->
+        <!--</div>-->
+        <!--<p class="section-heading__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>-->
 
 
-        <div class="row flex-row flex-wrap">
-            <div class="col-3">
-            <div class="img-background">
-                <div class="img-wrapper">
-                    <img src="../src/content/images/about-us01.png" alt="about-us-01">
-                    <div class="overlay">
-                        <i class="fas fa-users"></i>
-                        <div>Super team</div>
-                    </div>
-                </div>
-            </div>
-            </div>
-                <div class="col-3">
-                    <div class="img-background img-fluid">
-                        <div class="img-wrapper">
-                            <img src="../src/content/images/about-us02.png" alt="about-us-01">
-                            <div class="overlay">
-                                <i class="far fa-plus-square"></i>
-                                <div>Creativity</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!--<div class="row flex-row flex-wrap">-->
+            <!--<div class="col-3">-->
+            <!--<div class="img-background">-->
+                <!--<div class="img-container">-->
+                    <!--<img src="../src/content/images/about-us01.png" alt="about-us-01">-->
+                    <!--<div class="overlay">-->
+                        <!--<i class="fas fa-users"></i>-->
+                        <!--<div>Super team</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+                <!--<div class="col-3">-->
+                    <!--<div class="img-background img-fluid">-->
+                        <!--<div class="img-container">-->
+                            <!--<img src="../src/content/images/about-us02.png" alt="about-us-01">-->
+                            <!--<div class="overlay">-->
+                                <!--<i class="far fa-plus-square"></i>-->
+                                <!--<div>Creativity</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
 
-            <div class="col-3">
-                <div class="img-background">
-                    <div class="img-wrapper">
-                        <img src="../src/content/images/gallery/gal3.png" alt="about-us-01">
-                        <div class="overlay">
-                            <i class="fas fa-desktop"></i>
-                            <div>Digital</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="img-background">
-                    <div class="img-wrapper">
-                        <img class="img-fluid" src="../src/content/images/about-us03.png" alt="about-us-01">
-                        <div class="overlay">
-                            <i class="fas fa-desktop"></i>
-                            <div>Digital</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="img-background">
-                    <div class="img-wrapper">
-                        <img  src="../src/content/images/about-us03.png" alt="about-us-01">
-                        <div class="overlay">
-                            <i class="fas fa-desktop"></i>
-                            <div>Digital</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
+            <!--<div class="col-3">-->
+                <!--<div class="img-background">-->
+                    <!--<div class="img-container">-->
+                        <!--<img src="../src/content/images/gallery/gal3.png" alt="about-us-01">-->
+                        <!--<div class="overlay">-->
+                            <!--<i class="fas fa-desktop"></i>-->
+                            <!--<div>Digital</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-3">-->
+                <!--<div class="img-background">-->
+                    <!--<div class="img-container">-->
+                        <!--<img class="img-fluid" src="../src/content/images/about-us03.png" alt="about-us-01">-->
+                        <!--<div class="overlay">-->
+                            <!--<i class="fas fa-desktop"></i>-->
+                            <!--<div>Digital</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-3">-->
+                <!--<div class="img-background">-->
+                    <!--<div class="img-container">-->
+                        <!--<img  src="../src/content/images/about-us03.png" alt="about-us-01">-->
+                        <!--<div class="overlay">-->
+                            <!--<i class="fas fa-desktop"></i>-->
+                            <!--<div>Digital</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
 
 
     </div>
