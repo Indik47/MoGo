@@ -2,8 +2,6 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700';
 @import 'https://fonts.googleapis.com/css?family=Kaushan+Script';
 
-
-
 html, body {
     box-sizing: border-box;
     line-height: 1.7;
@@ -38,7 +36,7 @@ a img {
     border: none;
 }
 
-.about-us, .services, .service, .who-we-are, .our-work {
+.about-us, .services, .service, .who-we-are, .our-work, .happy-clients {
     padding-top: 50px;
     margin-bottom: 55px;
 }
@@ -337,6 +335,9 @@ a img {
     height: 2px;
 }
 
+
+
+
 .who-we-are .row {
     text-align: center;
 }
@@ -383,12 +384,14 @@ a img {
 
 .who-we-are .info .regency {
     color: #999999;
-    font-family: "Roboto - Light Italic";
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
     font-size: 15px;
 }
 
 .icons-row {
-    padding-top: 50px;
+    padding: 50px 0;
     text-align: center;
     background-color: #f8f8f8;
 }
@@ -401,7 +404,42 @@ a img {
     height: fit-content;
 }
 
+.happy-clients .quote {
+    display: inline-block;
+    width: 69%;
+}
 
+.happy-clients .quote__icon {
+    margin: 0;
+    margin-right: 4%;
+}
+
+.happy-clients .col-12.col-md-6 {
+    margin: 30px 0;
+}
+
+.happy-clients .quote__author {
+    margin: 0;
+    font-family: Montserrat;
+}
+
+.happy-clients .quote__author::before {
+    content: "";
+    background-color: #d9000b;
+    position: absolute;
+    left: 0;
+    top: 230%;
+    width: 60px;
+    height: 2px;
+}
+
+.happy-clients .quote__job-title {
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 13px;
+}
 
 
 /*--------MEDIA QUERIES------------*/
