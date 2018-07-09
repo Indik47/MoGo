@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../src/css/header.css">
     <link rel="stylesheet" href="../src/css/main.css">
+    <link rel="stylesheet" href="../src/css/footer.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400" rel="stylesheet">
     <meta charset="UTF-8">
     <title>MoGO</title>
 </head>
@@ -18,18 +20,21 @@
         <div class="container">
                 <!--header navbar-->
                 <div class="row">
-                    <div class="col-3 logo">
-                        <a href="#" class="nav-collapsed"><i class="fas fa-bars"></i></a>
-                        <img src="../src/content/images/logo.png" alt="logo"/>
+
+                    <div class="col-3 header__logo">
+                        <a href="#" class="nav-collapsed">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <h2>MoGo</h2>
                     </div>
-                    <nav class="col-7 nav">
+                    <nav class="col-8 nav">
                         <a class="nav-link active" href="#">About</a>
                         <a class="nav-link" href="#">Service</a>
                         <a class="nav-link" href="#">Work</a>
                         <a class="nav-link" href="#">Blog</a>
                         <a class="nav-link" href="#">Contact</a>
                     </nav>
-                    <div class="col-2 icons">
+                    <div class="col-9 col-lg-1 header__icons">
                         <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
                         <a href="#" class="search"><i class="fas fa-search"></i></a>
                     </div>
@@ -69,25 +74,29 @@
                     </div>
                 </div>
                 <ol class="carousel-indicators clearfix">
-                    <li data-target="#carousel-mogo" data-slide-to="0" class="active">
+                    <li data-target="#carousel-mogo" data-slide-to="0" class="carousel-indicators__item active">
+                        <div class="bullet"></div>
                         <div class="inner">
                             <span class="number">01</span>
                             Intro
                         </div>
                     </li>
-                    <li data-target="#carousel-mogo" data-slide-to="1">
+                    <li data-target="#carousel-mogo" data-slide-to="1" class="carousel-indicators__item">
+                        <div class="bullet"></div>
                         <div class="inner">
                             <span class="number">02</span>
                             Intro
                         </div>
                     </li>
-                    <li data-target="#carousel-mogo" data-slide-to="2">
+                    <li data-target="#carousel-mogo" data-slide-to="2" class="carousel-indicators__item">
+                        <div class="bullet"></div>
                         <div class="inner">
                             <span class="number">03</span>
                             Intro
                         </div>
                     </li>
-                    <li data-target="#carousel-mogo" data-slide-to="3">
+                    <li data-target="#carousel-mogo" data-slide-to="3" class="carousel-indicators__item">
+                        <div class="bullet"></div>
                         <div class="inner">
                             <span class="number">04</span>
                             Intro
@@ -168,7 +177,7 @@
     </div>
 
     <!--WE WORK WITH-->
-    <div class="services container">
+    <div class="container services">
         <div class="section-heading">
             <span class="section-heading__subheading">We work with</span>
             <div class="section-heading__main">Amazing services</div>
@@ -221,7 +230,7 @@
     </div>
 
     <!--FOR ALL DEVICES-->
-    <div class="for-all-devices">
+    <div class="container-fluid for-all-devices">
             <div class="section-heading">
                 <span class="section-heading__subheading">For all devices</span>
                 <div class="section-heading__main">Unique design</div>
@@ -231,21 +240,20 @@
                     <img class="for-all-devices__imgs_iphone" src="../src/content/images/iphone.png" alt="iphone">
             </div>
         </div>
-    </div>
 
     <!--SERVICE-->
-    <div class="service container">
+    <div class="container service">
         <div class="section-heading">
             <span class="section-heading__subheading">Service</span>
             <div class="section-heading__main">What we do</div>
         </div>
         <p class="section-heading__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
-        <div class="row service-info justify-content-between">
-            <div class="col-md-6">
+        <div class="row service-info">
+            <div class="col-10 col-lg-6">
                 <img class="service-img" src="../src/content/images/service-img.png" alt="service-img">
             </div>
-            <div class="col-md-6 service-dropdowns">
+            <div class="col-lg-6 service-accordion">
                 <!--Accordion-->
                 <div class="accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
                     <div class="card">
@@ -322,7 +330,7 @@
     <!--QUOTE DIVIDER-->
     <div class="container-fluid quote-div">
         <div class="container">
-            <div id="carouselControls" class="carousel slide" data-ride="carousel">
+            <div id="carousel-quote01-Controls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="carousel-item__inner">
@@ -352,12 +360,12 @@
                          </div>
                 </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <a class="carousel-control-prev" href="#carousel-quote01-Controls" role="button" data-slide="prev">
+                    <i class="fas fa-angle-left prev"></i>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <a class="carousel-control-next" href="#carousel-quote01-Controls" role="button" data-slide="next">
+                    <i class="fas fa-angle-right next"></i>
                     <span class="sr-only">Next</span>
                 </a>
             </div>
@@ -371,8 +379,8 @@
             <div class="section-heading__main">Meet our team</div>
         </div>
         <p class="section-heading__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        <div class="row">
-            <div class="col-12 col-md-4">
+        <div class="row justify-content-center">
+            <div class="col-8 col-md-4">
                 <div class="img-background">
                     <div class="img-container">
                         <img class="img-container__item" src="../src/content/images/matthew.png" alt="matthew">
@@ -389,7 +397,7 @@
                     <span class="regency">Graphic Design</span>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-8 col-md-4">
                 <div class="img-background">
                     <div class="img-container">
                         <img class="img-container__item" src="../src/content/images/christopher.png" alt="chris">
@@ -406,7 +414,7 @@
                     <span class="regency">Branding/UX design</span>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-8 col-md-4">
                 <div class="img-background">
                     <div class="img-container">
                         <img class="img-container__item" src="../src/content/images/michael.png" alt="michael">
@@ -433,82 +441,351 @@
         </div>
     </div>
 
-    <!--&lt;!&ndash;SOME OF OUR WORK&ndash;&gt;-->
-    <!--<div class="container-fluid our-work">-->
-        <!--<div class="section-heading">-->
-            <!--<span class="section-heading__subheading">What we do</span>-->
-            <!--<div class="section-heading__main">Story about us</div>-->
-        <!--</div>-->
-        <!--<p class="section-heading__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>-->
+    <!--SOME OF OUR WORK-->
+    <div class="container-fluid our-work">
+        <div class="section-heading">
+            <span class="section-heading__subheading">What we do</span>
+            <div class="section-heading__main">Story about us</div>
+        </div>
+        <p class="section-heading__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
 
-        <!--<div class="row flex-row flex-wrap">-->
-            <!--<div class="col-3">-->
-            <!--<div class="img-background">-->
-                <!--<div class="img-container">-->
-                    <!--<img src="../src/content/images/about-us01.png" alt="about-us-01">-->
-                    <!--<div class="overlay">-->
-                        <!--<i class="fas fa-users"></i>-->
-                        <!--<div>Super team</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--</div>-->
-                <!--<div class="col-3">-->
-                    <!--<div class="img-background img-fluid">-->
-                        <!--<div class="img-container">-->
-                            <!--<img src="../src/content/images/about-us02.png" alt="about-us-01">-->
-                            <!--<div class="overlay">-->
-                                <!--<i class="far fa-plus-square"></i>-->
-                                <!--<div>Creativity</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
+        <div class="row no-gutters">
+            <div class="col-6 col-md-3">
+                <div class="img-background">
+                    <div class="img-container">
+                        <img src="../src/content/images/gallery/gal1.png" alt="about-us-01">
+                        <div class="overlay">
+                            <i class="fas fa-users"></i>
+                            <div>Super team</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-background img-fluid">
+                    <div class="img-container">
+                        <img src="../src/content/images/gallery/gal2.png" alt="about-us-01">
+                        <div class="overlay">
+                            <i class="far fa-plus-square"></i>
+                            <div>Creativity</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="col-6 col-md-3">
+                    <div class="img-background img-fluid">
+                        <div class="img-container">
+                            <img src="../src/content/images/gallery/gal3.png" alt="about-us-01">
+                            <div class="overlay">
+                                <i class="far fa-plus-square"></i>
+                                <div>Creativity</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-background img-fluid">
+                        <div class="img-container">
+                            <img src="../src/content/images/gallery/gal4.png" alt="about-us-01">
+                            <div class="overlay">
+                                <i class="far fa-plus-square"></i>
+                                <div>Creativity</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <!--<div class="col-3">-->
-                <!--<div class="img-background">-->
-                    <!--<div class="img-container">-->
-                        <!--<img src="../src/content/images/gallery/gal3.png" alt="about-us-01">-->
-                        <!--<div class="overlay">-->
-                            <!--<i class="fas fa-desktop"></i>-->
-                            <!--<div>Digital</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="col-3">-->
-                <!--<div class="img-background">-->
-                    <!--<div class="img-container">-->
-                        <!--<img class="img-fluid" src="../src/content/images/about-us03.png" alt="about-us-01">-->
-                        <!--<div class="overlay">-->
-                            <!--<i class="fas fa-desktop"></i>-->
-                            <!--<div>Digital</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="col-3">-->
-                <!--<div class="img-background">-->
-                    <!--<div class="img-container">-->
-                        <!--<img  src="../src/content/images/about-us03.png" alt="about-us-01">-->
-                        <!--<div class="overlay">-->
-                            <!--<i class="fas fa-desktop"></i>-->
-                            <!--<div>Digital</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-
-
+            <div class="col-6 col-md-3">
+                <div class="img-background">
+                    <div class="img-container">
+                        <img src="../src/content/images/gallery/gal5.png" alt="about-us-01">
+                        <div class="overlay">
+                            <i class="fas fa-desktop"></i>
+                            <div>Digital</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="img-background">
+                    <div class="img-container">
+                        <img class="img-fluid" src="../src/content/images/gallery/gal6.png" alt="about-us-01">
+                        <div class="overlay">
+                            <i class="fas fa-desktop"></i>
+                            <div>Digital</div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img class="img-fluid" src="../src/content/images/gallery/gal7.png" alt="about-us-01">
+                        <div class="overlay">
+                            <i class="fas fa-desktop"></i>
+                            <div>Digital</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-        <script type="text/javascript" src="../src/js/bootstrap.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--SECOND QUOTE DIVIDER-->
+    <div class="container-fluid quote-div quote-div_back-white">
+        <div class="container">
+            <div id="carousel-quote02-Controls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-item__inner">
+                            <img class="quote__icon" src="../src/content/images/avatar01.png" alt="quote-divider-icon">
+                            <div>
+                                <div class="quote__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="quote__author">Joshua Earle</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item__inner">
+                            <img class="quote__icon" src="../src/content/images/avatar01.png" alt="quote-divider-icon">
+                            <div>
+                                <div class="quote__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="quote__author">Drunk Monk</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item__inner">
+                            <img class="quote__icon" src="../src/content/images/avatar01.png" alt="quote-divider-icon">
+                            <div>
+                                <div class="quote__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="quote__author">Ranger Novas</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-quote02-Controls" role="button" data-slide="prev">
+                    <i class="fas fa-angle-left prev"></i>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-quote02-Controls" role="button" data-slide="next">
+                    <i class="fas fa-angle-right next"></i>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--HAPPY CLIENTS-->
+    <div class="happy-clients">
+        <div class="container">
+        <div class="section-heading">
+            <span class="section-heading__subheading">Happy clients</span>
+            <div class="section-heading__main">What people say</div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img class="quote__icon" src="../src/content/images/avatars/01matthew-avatar.png" alt="01matthew-avatar">
+                <div class="quote">
+                    <div class="quote__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                    <div class="quote__author">Matthew Dix</div>
+                    <div class="quote__job-title">Graphic Design</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <img class="quote__icon" src="../src/content/images/avatars/02Nick-avatar.png" alt="02Nick-avatar">
+                <div class="quote">
+                    <div class="quote__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                    <div class="quote__author">Nick Karvounis</div>
+                    <div class="quote__job-title">Graphic Design</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <img class="quote__icon" src="../src/content/images/avatars/03Jaelynn-avatar.png" alt="03Jaelynn-avatar">
+                <div class="quote">
+                    <div class="quote__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                    <div class="quote__author">Jaelynn Castillo </div>
+                    <div class="quote__job-title">Graphic Design</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <img class="quote__icon" src="../src/content/images/avatars/04Mike-avatar.png" alt="04Mike-avatar">
+                <div class="quote">
+                    <div class="quote__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                    <div class="quote__author">Mike Petrucci</div>
+                    <div class="quote__job-title">Graphic Design</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!--OUR STORIES-->
+    <div class="container our-stories">
+        <div class="section-heading">
+            <span class="section-heading__subheading">Our stories</span>
+            <div class="section-heading__main">LATEST BLOG</div>
+        </div>
+        <p class="section-heading__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+        <div class="row articles">
+            <div class="col-12 col-sm-4 article__container">
+                    <div class="img-container img-container_fixed">
+                        <img src="../src/content/images/our-stories01.jpg" alt="about-us-01">
+                        <div class="article__date">
+                            <span class="number">15</span>
+                            <span class="text">Jan</span>
+                        </div>
+                    </div>
+                    <a class="article__title" href="#">LOREM IPSUM DOLOR SIT AMET</a>
+                    <p class="article__description">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="article__icons">
+                        <i class="fas fa-eye"></i>
+                        <span>543</span>
+                        <i class="far fa-comment"></i>
+                        <span>235</span>
+                    </div>
+
+            </div>
+            <div class="col-12 col-sm-4 article__container">
+                <div class="img-container img-container_fixed">
+                    <img src="../src/content/images/our-stories02.jpg" alt="about-us-01">
+                    <div class="article__date">
+                        <span class="number">15</span>
+                        <span class="text">Jan</span>
+                    </div>
+                </div>
+                <a class="article__title" href="#">LOREM IPSUM DOLOR SIT AMET</a>
+                <p class="article__description">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="article__icons">
+                    <i class="fas fa-eye"></i>
+                    <span>543</span>
+                    <i class="far fa-comment"></i>
+                    <span>235</span>
+                </div>
+
+            </div>
+            <div class="col-12 col-sm-4 article__container">
+                <div class="img-container img-container_fixed">
+                    <img src="../src/content/images/our-stories01.jpg" alt="about-us-01">
+                    <div class="article__date">
+                        <span class="number">15</span>
+                        <span class="text">Jan</span>
+                    </div>
+                </div>
+                <a class="article__title" href="#">LOREM IPSUM DOLOR SIT AMET</a>
+                <p class="article__description">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="article__icons">
+                    <i class="fas fa-eye"></i>
+                    <span>543</span>
+                    <i class="far fa-comment"></i>
+                    <span>235</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--OPEN MAP DIVIDER-->
+    <div class="open-map">
+        <div class="container">
+            <div class="section-heading section-heading_no-margin">
+                <a href="">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="section-heading__main">Open map</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="subscribe">
+                        <div class="logo">MOGO</div>
+                        <p class="subscribe__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <div class="followers">
+                            <p><span class="followers__number">15k</span> followers</p>
+                            <div class="follow-us">
+                                <span class="follow-us__title d-inline-block">Follow Us: </span>
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-pinterest-p"></i>
+                                <i class="fab fa-google-plus-g"></i>
+                                <i class="fab fa-youtube"></i>
+                                <i class="fas fa-basketball-ball"></i>
+                                <i class="fab fa-tumblr"></i>
+                            </div>
+                        </div>
+
+                        <form action="" class="subscribeForm">
+                            <div class="input-group input-group-lg">
+                                <input type="email" class="form-control" placeholder="Your Email" required="">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-success" type="submit">Subscribe</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blogs">
+                        <h3 class="col-heading">Blogs</h3>
+                        <ul class="blogs__article">
+                            <li class="blogs__article-item">
+                                <a class="article-img" href="#"><img src="content/images/footer/blogs-01.png" alt="footer-li-01"></a>
+                                <div class="info">
+                                    <h3 class="blogs__article-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a></h3>
+                                    <div class="blogs__article-date">Jan 9, 2016</div>
+                                </div>
+                            </li>
+                            <li class="blogs__article-item">
+                                <a class="article-img" href="#"><img src="content/images/footer/blogs-02.png" alt="footer-li-02"></a>
+                                <div class="info">
+                                    <h3 class="blogs__article-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a></h3>
+                                    <div class="blogs__article-date">Jan 9, 2016</div>
+                                </div>
+                            </li>
+                            <li class="blogs__article-item">
+                                <a class="article-img" href="#"><img src="content/images/footer/blogs-03.png" alt="footer-li-02"></a>
+                                <div class="info">
+                                    <h3 class="blogs__article-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a></h3>
+                                    <div class="blogs__article-date">Jan 9, 2016</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="instagram">
+                        <h3 class="col-heading">Instagram</h3>
+
+                    <div class="instagram__gallery">
+                        <a href="#"><img src="content/images/footer/insta-01.png" alt="inst-01"></a>
+                        <a href=""><img src="content/images/footer/insta-02.png" alt="inst-01"></a>
+                        <a href=""><img src="content/images/footer/insta-03.png" alt="inst-01"></a>
+                        <a href=""><img src="content/images/footer/insta-04.png" alt="inst-01"></a>
+                        <a href=""><img src="content/images/footer/insta-05.png" alt="inst-01"></a>
+                        <a href=""><img src="content/images/footer/insta-06.png" alt="inst-01"></a>
+                        <a href=""><img src="content/images/footer/insta-07.png" alt="inst-01"></a>
+                        <a href=""><img src="content/images/footer/insta-08.png" alt="inst-01"></a>
+                        <a href=""><img src="content/images/footer/insta-09.png" alt="inst-01"></a>
+
+                    </div>
+                    <div class="instagram__view-more">
+                        <a href="#"><span>View more photos</span></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            Made in 2018 by <a target="" href="mailto:indik47@gmail.com">Denys Oligov</a> <br>
+            MoGo free PSD template by <a href="https://www.behance.net/laaqiq">Laaqiq</a>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
 

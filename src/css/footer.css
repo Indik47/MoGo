@@ -1,0 +1,220 @@
+footer{
+    color: #999;
+    font-weight: 400;
+    overflow-x: hidden;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer .logo {
+    color: #ccc;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 100%;
+}
+
+.subscribe__text {
+    margin-bottom: 0.5em;
+}
+
+.followers {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.followers p {
+    float: left;
+    padding-bottom: 0;
+    margin-right: 15px;
+    border-bottom: 1px solid rgba(127, 127, 127, 0);
+}
+
+.followers__number {
+    font-weight: 700;
+}
+
+.follow-us__title {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.follow-us i {
+    margin-left: 0.5em;
+    color: #95e1d3;
+}
+
+.follow-us i:hover {
+    color: #527c75;
+}
+
+.subscribeForm {
+    margin: 1em 0;
+    font-family: Montserrat;
+    font-weight: 700;
+
+}
+
+.subscribeForm .form-control {
+    border-radius: 0;
+}
+
+.subscribeForm .btn{
+    width: 120px;
+    height: 100%;
+    border-radius: 0;
+    border: 0;
+    background-color: #95e1d3;
+    text-transform: uppercase;
+}
+
+.subscribeForm .btn:hover{
+    background-color: #527c75;
+}
+
+footer .container {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(127, 127, 127, 0.5);
+}
+
+.col-heading {
+    color: black;
+    font-family: Montserrat;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.blogs__article {
+    display: inline-block;
+    padding: 0;
+}
+
+.blogs__article-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 0.7em;
+}
+
+.blogs__article-item .article-img {
+    margin-right: 0.6em;
+}
+
+.blogs__article-item .info {
+    display: inline-block;
+}
+
+.blogs__article-item .info .blogs__article-title {
+    margin: 0;
+}
+
+.blogs__article-item .info .blogs__article-title a {
+    display: inline-block;
+    font-size: 12px;
+    color: #333333;
+    font-family: Montserrat;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.blogs__article-item .info .blogs__article-date {
+
+    font-weight: 300;
+    font-style: italic;
+}
+
+.instagram__gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.instagram__gallery a {
+    width: 70px;
+    margin: 1px;
+}
+
+.instagram__gallery a img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.instagram__view-more {
+    clear: both;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.instagram__view-more span {
+    color: #000;
+}
+
+.instagram__view-more span:hover {
+    color: #95e1d3;
+}
+
+footer .copyright {
+    text-align: center;
+    margin: 15px 0;
+}
+
+footer .copyright a{
+    color: #f38181;
+}
+
+footer .copyright a:hover{
+    color:#95e1d3;
+}
+
+
+
+/*----------------------MEDIA QUERIES*/
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+    .instagram__view-more {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .subscribe__text {
+        margin-bottom: 3.1em;
+    }
+
+    .followers p {
+        float: none;
+        border-bottom: 1px solid rgba(127, 127, 127, 0.2);
+        padding-bottom: 10px;
+    }
+
+    .col-heading {
+        margin-bottom: 25px;
+    }
+
+    .blogs__article-item {
+        margin-bottom: 1.8em;
+    }
+
+    .instagram__gallery a {
+        width: 88px;
+    }
+    .instagram__view-more {
+        margin-top: 0px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .subscribe__text {
+        margin-bottom: 4.7em;
+    }
+
+    .instagram__view-more {
+        margin-top: 0px;
+    }
+
+}
